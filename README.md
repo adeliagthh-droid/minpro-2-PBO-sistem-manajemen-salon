@@ -34,7 +34,8 @@ Package pertama adalah **com.mycompany.sistem_manajemen_salon** yang berisi clas
 
 Package kedua adalah **model** yang berisi lima class sebagai cetak biru data, yaitu Pelanggan, Layanan, LayananRambut, LayananKecantikan, dan Reservasi. Class-class pada package ini hanya berisi atribut, constructor, serta method getter dan setter, tanpa berisi logika menu sama sekali.
 
-(screenshot struktur package)
+<img width="400" alt="WhatsApp Image 2026-09-24 at 20 08 01" src="https://github.com/user-attachments/assets/f3f91080-e55b-4228-a45c-1f80b818b0ae" />
+
 
 ## 4. Penerapan Inheritance
 
@@ -47,14 +48,13 @@ Class Layanan menyimpan data yang dimiliki oleh semua jenis layanan salon, yaitu
 Sementara itu class Pelanggan dan class Reservasi tidak memiliki relasi inheritance. Class Reservasi terhubung dengan class Pelanggan dan class Layanan dengan cara menyimpan objek dari kedua class tersebut sebagai atributnya.
 
 ### 4.2 Letak Penerapan pada Super-class Layanan
-
-(screenshot class Layanan)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/2eeef208-a138-4be3-a105-b1e1e6dd1260" />
 
 Class Layanan memiliki tiga atribut, yaitu idLayanan, namaLayanan, dan harga. Class ini juga memiliki method getKategori dan getInfo yang nantinya akan ditimpa oleh kedua sub-class.
 
 ### 4.3 Letak Penerapan pada Sub-class LayananRambut
 
-(screenshot class LayananRambut)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/6bc7c821-947e-43eb-a8c9-3ac2c3110530" />
 
 Penerapan inheritance terlihat pada dua bagian. Bagian pertama adalah kata kunci **extends Layanan** pada baris deklarasi class, yang menandakan bahwa class ini merupakan turunan dari class Layanan. Dengan kata kunci ini, seluruh method milik class Layanan seperti getNamaLayanan, getHarga, setNamaLayanan, dan setHarga otomatis dimiliki juga oleh class LayananRambut tanpa perlu ditulis ulang.
 
@@ -62,7 +62,7 @@ Bagian kedua adalah pemanggilan **super(idLayanan, namaLayanan, harga)** di dala
 
 ### 4.4 Letak Penerapan pada Sub-class LayananKecantikan
 
-(screenshot class LayananKecantikan)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/0a380224-54a7-4ca5-a7c8-a66e5cb758ad" />
 
 Class LayananKecantikan disusun dengan cara yang sama, yaitu menggunakan extends dan super. Perbedaannya hanya terletak pada atribut tambahan yang dimilikinya, yaitu durasiMenit.
 
@@ -76,7 +76,7 @@ Alasan ketiga adalah agar seluruh jenis layanan dapat disimpan dalam satu ArrayL
 
 ### 4.6 Letak Pembuatan Objek Sub-class
 
-(screenshot method tambahLayanan)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/95bcf8bc-b218-486f-a9b2-3987e07eb2a6" />
 
 Pada method tambahLayanan di class utama, program menanyakan kategori layanan terlebih dahulu kepada pengguna. Apabila pengguna memilih kategori rambut, program membuat objek LayananRambut. Apabila memilih kategori kecantikan, program membuat objek LayananKecantikan. Kedua objek tersebut kemudian dimasukkan ke dalam ArrayList yang sama.
 
@@ -102,7 +102,7 @@ Alasan ketiga adalah agar keterangan yang sama tidak ditulis ulang. Karena kedua
 
 ### 5.2 Bukti Hasil Method Overriding
 
-(screenshot tampilkan layanan)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/7ffabb5c-505a-4036-913b-002c05ee0609" />
 
 Screenshot di atas merupakan bukti bahwa overriding benar-benar bekerja. Seluruh data ditampilkan menggunakan satu perulangan yang sama dan satu pemanggilan method getInfo yang sama, namun hasilnya berbeda-beda sesuai jenis datanya. Data Potong Rambut, Creambath, dan Smoothing Rambut menampilkan kategori Rambut beserta baris panjang rambut, sedangkan data Facial dan Manicure Pedicure menampilkan kategori Kecantikan beserta baris durasi.
 
@@ -110,7 +110,7 @@ Screenshot di atas merupakan bukti bahwa overriding benar-benar bekerja. Seluruh
 
 Method overloading adalah keadaan ketika terdapat dua method atau lebih dengan nama yang sama namun jumlah atau jenis parameternya berbeda.
 
-(screenshot kedua method inputAngka)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/0d9d59e1-2236-4bd0-98eb-5d1b0cf05c65" />
 
 Pada program ini method **inputAngka** ditulis dua kali. Bentuk pertama hanya menerima satu parameter berupa teks pertanyaan, dan digunakan ketika program hanya butuh memastikan masukan berupa angka yang lebih dari nol, misalnya saat meminta ID data yang ingin diubah atau dihapus.
 
