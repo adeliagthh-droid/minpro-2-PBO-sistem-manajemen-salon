@@ -128,11 +128,11 @@ Alasan ketiga adalah agar pemeriksaan angka tidak ditulis dua kali, karena bentu
 
 ### 6.1 Letak Penerapan
 
-(screenshot class Pelanggan)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/88c5fa6b-276e-487d-b21b-39050591c645" />
 
 Seluruh atribut pada class model dideklarasikan dengan access modifier **private**, seperti terlihat pada class Pelanggan di atas. Dengan demikian atribut tersebut tidak dapat diakses maupun diubah secara langsung dari class utama. Pembacaan dan pengubahan nilainya hanya dapat dilakukan melalui method getter dan setter yang bersifat **public**. Penerapan inilah yang disebut encapsulation.
 
-(screenshot method ubahPelanggan)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/2a914b4d-bd79-4b8e-924a-c9fc4aec8608" />
 
 Screenshot di atas menunjukkan bagaimana encapsulation digunakan dari class utama. Program tidak mengubah atribut secara langsung, melainkan memanggil method setNama dan setNoTelepon milik objek Pelanggan.
 
@@ -150,7 +150,11 @@ Alasan ketiga adalah agar perubahan di kemudian hari lebih mudah. Apabila suatu 
 
 ### 7.1 Letak Penerapan
 
-(screenshot method validasi input)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/05e53874-8fa6-496c-845d-f7bfd2478fe1" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/f4dfb937-5ef0-4f99-bba0-671a6891a1fb" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/5efa6f58-874e-4224-bcad-a6e2e5321ac4" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/b7110739-68ed-4be5-878d-aecee11e9030" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/36531229-46fd-40b0-a627-16b4f3a9d331" />
 
 Seluruh method validasi dikumpulkan pada bagian bawah class utama, di bawah komentar VALIDASI INPUT, agar mudah dicari. Setiap method bekerja dengan cara yang sama, yaitu menampilkan pertanyaan, membaca masukan pengguna, lalu memeriksanya. Apabila masukan tidak sesuai, program menampilkan pesan kesalahan dan mengulang pertanyaan tersebut sampai masukan yang diberikan benar.
 
@@ -176,13 +180,13 @@ Alasan keempat adalah agar data tidak terhapus karena kesalahan pengguna. Konfir
 
 ### 7.3 Bukti Hasil Validasi Input
 
-(screenshot percobaan input salah)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/b6d5355e-8bbf-4fa9-a43d-2d145a410ac6" />
 
 Pengujian dilakukan dengan sengaja memasukkan data yang keliru, seperti huruf pada bagian yang meminta angka, angka di luar pilihan menu, nomor telepon yang tidak diawali nol delapan, serta tanggal dengan format yang salah. Program menampilkan pesan kesalahan sesuai jenis kesalahannya dan meminta masukan ulang tanpa berhenti secara paksa.
 
 ## 8. Dummy Data
 
-(screenshot method isiDataAwal)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/4b27f81f-1e00-4c52-9308-2c939e7cdd9a" />
 
 Program telah diisi dengan data awal sejak pertama kali dijalankan, yaitu lima data pelanggan, lima data layanan, dan lima data reservasi. Pengisian data ini dilakukan oleh method isiDataAwal yang dipanggil paling awal di dalam method main.
 
