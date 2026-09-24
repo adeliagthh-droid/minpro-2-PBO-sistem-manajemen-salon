@@ -210,43 +210,43 @@ Bagian ini menampilkan hasil pengujian program melalui jendela Output pada Apach
 
 Ketika program dijalankan, program terlebih dahulu mengisi data awal, kemudian menampilkan Menu Utama yang terdiri dari empat pilihan. Menu Utama dibungkus menggunakan perulangan do-while sehingga setelah satu proses selesai, menu ditampilkan kembali secara otomatis dan pengguna dapat melakukan beberapa pekerjaan sekaligus tanpa menjalankan ulang program.
 
-(screenshot menu utama)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/faf7695e-9847-4d42-8df6-de787d4ef424" />
 
 ### 10.2 Tambah Pelanggan
 
 Pengguna memasukkan nama pelanggan dan nomor telepon secara berurutan. Berbeda dengan versi sebelumnya, pengguna tidak perlu lagi mengetik ID karena ID dibuat otomatis oleh program agar tidak terjadi ID ganda yang dapat membuat proses ubah dan hapus salah sasaran. Nama yang dimasukkan juga dirapikan otomatis huruf besar kecilnya.
 
-(screenshot tambah pelanggan)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/02594fb6-4ca3-4e35-ab0f-e24d56e004f4" />
 
 ### 10.3 Tampilkan Pelanggan
 
 Sistem menampilkan seluruh data pelanggan, meliputi ID, nama, dan nomor telepon. Penelusuran dilakukan dari data pertama sampai terakhir sehingga tidak ada data yang terlewat. Pada tampilan ini terlihat lima data awal beserta data yang baru ditambahkan, yang membuktikan bahwa proses penambahan benar-benar tersimpan.
 
-(screenshot tampilkan pelanggan)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/88bddc7d-f84d-4f2b-90c3-628420b91e08" />
 
 ### 10.4 Ubah Pelanggan
 
 Program menampilkan daftar pelanggan terlebih dahulu, kemudian meminta ID yang ingin diubah. Apabila data ditemukan, pengguna memasukkan nama dan nomor telepon baru yang disimpan melalui method setter. ID tidak ikut diubah karena berfungsi sebagai identitas. Apabila ID tidak terdaftar, program menampilkan pesan dan tidak mengubah data apa pun.
 
-(screenshot ubah pelanggan)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/8f715fcb-22c5-42d2-8fc0-b8e8351a5b70" />
 
 ### 10.5 Hapus Pelanggan
 
 Sebelum data dihapus, program menampilkan konfirmasi beserta nama pelanggan yang akan dihapus. Konfirmasi ini hanya menerima jawaban y atau n. Apabila dijawab n, penghapusan dibatalkan dan data tetap aman.
 
-(screenshot hapus pelanggan)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/066b080d-66f2-466d-b135-162d3a129971" />
 
 ### 10.6 Tambah Layanan
 
 Program meminta kategori layanan terlebih dahulu. Apabila memilih kategori rambut, program menanyakan panjang rambut. Apabila memilih kategori kecantikan, program menanyakan durasi pengerjaan. Dari pilihan inilah program menentukan objek sub-class mana yang dibuat.
 
-(screenshot tambah layanan)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/2cbb4c6d-e057-4f71-aa6a-08b3ad8c6c1a" />
 
 ### 10.7 Ubah dan Hapus Layanan
 
 Pada proses ubah, pengguna dapat mengganti nama layanan dan harganya, misalnya ketika salon melakukan penyesuaian tarif. Pada proses hapus, program meminta konfirmasi terlebih dahulu seperti pada data pelanggan.
 
-(screenshot ubah layanan)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/adab637d-18bf-4f18-83b0-38573c2dd47a" />
 
 ### 10.8 Tambah Reservasi
 
@@ -258,19 +258,19 @@ Program memeriksa terlebih dahulu apakah daftar pelanggan atau layanan masih kos
 
 Sistem menampilkan seluruh data reservasi beserta nama pelanggan, nama layanan, kategori, harga, dan tanggal. Nama pelanggan dan nama layanan diambil langsung dari objek yang tersimpan di dalam reservasi, dan kategorinya diambil melalui method getKategori yang sudah di-override, sehingga hasil polymorphism juga terlihat pada menu ini.
 
-(screenshot tampilkan reservasi)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/930ef454-2bac-4a2e-9285-4177cb3a73b6" />
 
 ### 10.10 Ubah dan Hapus Reservasi
 
 Pada proses ubah, data yang dapat diubah hanya tanggalnya saja, karena mengganti pelanggan atau layanan pada dasarnya berarti membuat pemesanan yang berbeda. Pada proses hapus, yang dihapus hanya data reservasinya, sedangkan data pelanggan dan layanan tetap tersimpan.
 
-(screenshot ubah reservasi)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/3c6d6770-c97c-4220-9a62-533ce23212a5" />
 
 ### 10.11 Keluar Program
 
 Apabila pengguna memilih menu Keluar, program menampilkan pesan penutup. Kondisi pada perulangan do-while menjadi tidak terpenuhi sehingga perulangan berhenti dan program selesai dijalankan.
 
-(screenshot keluar program)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/3d70af50-7ba3-4a83-958b-dae26ebe01f6" />
 
 ## 11. Kesimpulan
 
